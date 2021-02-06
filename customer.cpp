@@ -1,7 +1,10 @@
 /**
  * @file customer.cpp
- * @author Team1> Aman Kalaskar & Aishwariya
- * @brief 
+ * @author Team1> Aman Kalaskar 
+ *                Aishwariya P S
+ *                Aadarsha Mohan R
+ *                Ragul Periaswami
+ * @brief This is a program of general customer's operations
  * @version 0.1
  * @date 2021-02-06
  * 
@@ -42,7 +45,10 @@ double Customer::getBalance() const{
     return balance;
 
 }
-
+/**
+ * @brief Here the customer is 
+ * 
+ */
 void Customer::dispay() const{
     cout<<"customer id:"+id<<endl;
     cout<<"\ncustomer name:"<<name<<endl;
