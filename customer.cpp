@@ -3,7 +3,7 @@
  * @author Team1> Aman Kalaskar 
  *                Aiswarya P S
  *                Aadarsha Mohan R
- *                Ragul Periaswami
+ *                Ragul Periaswamy
  * @brief This is a program of general customer's operations
  * @version 0.1
  * @date 2021-02-06
@@ -55,7 +55,7 @@ double Customer::getBalance() const{
 
 
 /**
- * @brief In display function,
+ * @brief In display function customer ID, Name, Phone number and balance
  * 
  */
 void Customer::dispay() const{
