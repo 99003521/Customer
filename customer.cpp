@@ -1,4 +1,20 @@
+/**
+ * @file customer.cpp
+ * @author Team1> Aman Kalaskar & Aishwariya
+ * @brief 
+ * @version 0.1
+ * @date 2021-02-06
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
+
 #include "customer.h"
+#include <iostream>
+
+using namespace std;
+
+
 Customer::Customer():id(0),name(""),phone(""),balance(0.0),type(Prepaid){
 
 }
@@ -28,5 +44,8 @@ double Customer::getBalance() const{
 }
 
 void Customer::dispay() const{
-    std::cout<<"customer id:"+id<<",customer name:"<<name<<",customer phone number"<<phone<<",balance"<<balance;
+    cout<<"customer id:"+id<<endl;
+    cout<<"\ncustomer name:"<<name<<endl;
+    cout<<"\ncustomer phone number"<<phone<<endl;
+    cout<<"\nbalance"<<balance<<endl;
 }
