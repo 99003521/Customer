@@ -1,7 +1,7 @@
 /**
  * @file customer.cpp
  * @author Team1> Aman Kalaskar 
- *                Aishwariya P S
+ *                Aiswarya P S
  *                Aadarsha Mohan R
  *                Ragul Periaswami
  * @brief This is a program of general customer's operations
