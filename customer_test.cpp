@@ -13,7 +13,7 @@ namespace{
     TEST(Customer,makecall){
         Customer c1("1","Aman","7972770192",420.0,Prepaid);
         c1.makeCall(4);
-        EXPECT_EQ(380.0, c1.getBalance());
+        EXPECT_EQ(380.0 , c1.getBalance());
     }
 
 }
