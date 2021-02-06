@@ -51,7 +51,7 @@ void Customer::makeCall(double y){
 
 double Customer::getBalance() const{
     if(balance<0){
-        cout<< "Balance can't be negative"
+        cout<< "Balance can't be negative";
     }
     else{return balance;}
 }
