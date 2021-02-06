@@ -11,10 +11,7 @@
  * @copyright Copyright (c) 2021
  * 
  */
-#define __CUSTOMER_H
 
-#include<string>
-#include<cstdint>
 #include<iostream>
 
 enum AccountType {
@@ -22,55 +19,28 @@ enum AccountType {
     Postpaid
 };
 
-class Customer {
+class Customer 
+{
     std::string id;
     std::string name;
     std::string phone;
     double balance;
     AccountType type;
     public:
-    /**
-     * @brief Default Constructor for customer
-     * 
-     */
     Customer();
-    /**
-     * @brief Paramaterized constructor for Customer which includes double
-     * 
-     */
+  
     Customer(std::string,std::string,std::string,double,AccountType);
-    /**
-     * @brief Paramaterized constructor for Customer
-     * 
-     */
+    
     Customer(std::string,std::string,std::string,AccountType);
-    /**
-     * @brief Copy constructor for Customer
-     * 
-     */
+    
     Customer(const Customer&);
-    /**
-     * @brief Credit Function
-     * 
-     */
+   
     void credit(double);     
-    /**
-     * @brief Make call function
-     * 
-     * @return * void 
-     */
+    
     void makeCall(double);
-    /**
-     * @brief Get the Balance object
-     * 
-     * @return double 
-     */
+  
 
     double getBalance() const;
-    /**
-     * @brief Display function
-     * 
-     */
+    
     void dispay() const;
 };
-#endif
