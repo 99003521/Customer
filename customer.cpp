@@ -21,6 +21,11 @@ using namespace std;
 Customer::Customer():id(0),name(""),phone(""),balance(0.0),type(Prepaid){
 
 }
+
+
+
+
+
 Customer::Customer(std::string idval,std::string nameval,std::string phoneval,double balval,AccountType typeval):id(idval),name(nameval),phone(phoneval),balance(balval),type(typeval){
 
 }
@@ -43,10 +48,14 @@ void Customer::makeCall(double y){
 
 double Customer::getBalance() const{
     return balance;
-
 }
+
+
+
+
+
 /**
- * @brief Here the customer is 
+ * @brief In display function,
  * 
  */
 void Customer::dispay() const{
