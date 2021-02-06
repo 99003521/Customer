@@ -42,12 +42,18 @@ void Customer::credit(double x){
 void Customer::makeCall(double y){
     double amount;
     amount=y*10;
-    balance-=amount;
+    if(balance>amount){balance-=amount;}
+    else{
+        cout<<"Balance low.";
+    }
 
 }
 
 double Customer::getBalance() const{
-    return balance;
+    if(balance<0){
+        cout<< "Balance can't be negative"
+    }
+    else{return balance;}
 }
 
 
@@ -59,8 +65,8 @@ double Customer::getBalance() const{
  * 
  */
 void Customer::dispay() const{
-    cout<<"customer id:"+id<<endl;
-    cout<<"\ncustomer name:"<<name<<endl;
-    cout<<"\ncustomer phone number"<<phone<<endl;
-    cout<<"\nbalance"<<balance<<endl;
+    cout<<"Customer id:"+id<<endl;
+    cout<<"\nCustomer name:"<<name<<endl;
+    cout<<"\nCustomer phone number"<<phone<<endl;
+    cout<<"\nBalance"<<balance<<endl;
 }
